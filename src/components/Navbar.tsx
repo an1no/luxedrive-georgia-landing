@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   const links = [
-    { label: "Services", href: "#services" },
-    { label: "Fleet", href: "#fleet" },
-    { label: "Reviews", href: "#reviews" },
+    { label: t("nav.services"), href: "#services" },
+    { label: t("nav.fleet"), href: "#fleet" },
+    { label: t("nav.reviews"), href: "#reviews" },
   ];
 
   return (
@@ -22,25 +25,29 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <a
-              key={link.label}
+              key={link.href}
               href={link.href}
               className="text-sm font-body text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
             >
               {link.label}
             </a>
           ))}
+          <LanguageSwitcher />
           <Button variant="gold" size="sm">
-            Book Now
+            {t("nav.bookNow")}
           </Button>
         </div>
 
         {/* Mobile toggle */}
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-3">
+          <LanguageSwitcher />
+          <button
+            className="text-foreground"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -48,7 +55,7 @@ const Navbar = () => {
         <div className="md:hidden bg-background border-b border-border px-4 pb-4 space-y-3">
           {links.map((link) => (
             <a
-              key={link.label}
+              key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
               className="block text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-wide"
@@ -57,7 +64,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="gold" size="sm" className="w-full">
-            Book Now
+            {t("nav.bookNow")}
           </Button>
         </div>
       )}
