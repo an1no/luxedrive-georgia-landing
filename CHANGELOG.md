@@ -14,6 +14,7 @@ All notable changes to the **Midi Travel Georgia** landing page will be document
 - **Email Contact**: Updated official contact email to `miditravelgeorgia@gmail.com`.
 - **Project Structure Support**: Configured Vite and React Router with a `base` / `basename` of `/luxedrive-georgia-landing/` to ensure perfect routing on GitHub Pages.
 - **README Internal Update**: Rewrote the project documentation to remove third-party tool mentions and focus on core development instructions.
+- **Modern Typography**: Replaced conservative fonts with a catchy, premium combination of **Outfit** (Display) and **Montserrat** (Body) to enhance the VIP brand aesthetic.
 
 ### Fixed
 - **Navigation Compatibility**: Resolved a routing issue where the application root was returning "Not Found" when running behind the GitHub Pages subdirectory path.

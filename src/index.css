@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -41,8 +41,8 @@
     --charcoal: 0 0% 12%;
     --charcoal-light: 0 0% 16%;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
 
     --shadow-gold: 0 0 20px hsl(43 72% 55% / 0.3);
     --shadow-gold-lg: 0 0 40px hsl(43 72% 55% / 0.2);
