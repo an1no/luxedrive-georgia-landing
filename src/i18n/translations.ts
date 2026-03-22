@@ -13,7 +13,7 @@ export const translations: Record<Language, Record<string, string>> = {
   en: {
     // Navbar
     "nav.services": "Services",
-    "nav.fleet": "Fleet",
+    "nav.fleet": "Cars",
     "nav.reviews": "Reviews",
     "nav.bookNow": "Book Now",
 
@@ -35,7 +35,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "services.executive.desc": "Spotless, high-end minivans for business meetings, delegations, or maximum privacy.",
 
     // Fleet
-    "fleet.tagline": "Our Fleet",
+    "fleet.tagline": "Our Vehicles",
     "fleet.title1": "7-Seater Premium",
     "fleet.title2": "Black Minivan",
     "fleet.desc": "Travel in style with our meticulously maintained premium minivan, designed for comfort on Georgia's most scenic routes.",
@@ -56,7 +56,7 @@ export const translations: Record<Language, Record<string, string>> = {
   },
   ka: {
     "nav.services": "სერვისები",
-    "nav.fleet": "ავტოპარკი",
+    "nav.fleet": "მანქანები",
     "nav.reviews": "შეფასებები",
     "nav.bookNow": "დაჯავშნე",
 
@@ -75,7 +75,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "services.executive.title": "ბიზნეს ტრანსპორტი",
     "services.executive.desc": "უმაღლესი კლასის მინივენები საქმიანი შეხვედრებისა და დელეგაციებისთვის.",
 
-    "fleet.tagline": "ჩვენი ავტოპარკი",
+    "fleet.tagline": "ჩვენი ავტომობილები",
     "fleet.title1": "7-ადგილიანი პრემიუმ",
     "fleet.title2": "შავი მინივენი",
     "fleet.desc": "იმოგზაურეთ სტილურად ჩვენი ზედმიწევნით მოვლილი პრემიუმ მინივენით, შექმნილი კომფორტისთვის საქართველოს ულამაზეს მარშრუტებზე.",
@@ -94,7 +94,7 @@ export const translations: Record<Language, Record<string, string>> = {
   },
   ru: {
     "nav.services": "Услуги",
-    "nav.fleet": "Автопарк",
+    "nav.fleet": "Автомобили",
     "nav.reviews": "Отзывы",
     "nav.bookNow": "Забронировать",
 
@@ -113,7 +113,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "services.executive.title": "Бизнес Транспорт",
     "services.executive.desc": "Безупречные минивэны премиум-класса для деловых встреч и делегаций.",
 
-    "fleet.tagline": "Наш Автопарк",
+    "fleet.tagline": "Наши Автомобили",
     "fleet.title1": "7-местный Премиум",
     "fleet.title2": "Чёрный Минивэн",
     "fleet.desc": "Путешествуйте стильно в нашем безупречно обслуживаемом премиум минивэне, созданном для комфорта на самых живописных маршрутах Грузии.",
@@ -132,7 +132,7 @@ export const translations: Record<Language, Record<string, string>> = {
   },
   zh: {
     "nav.services": "服务",
-    "nav.fleet": "车队",
+    "nav.fleet": "车辆",
     "nav.reviews": "评价",
     "nav.bookNow": "立即预订",
 
@@ -151,7 +151,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "services.executive.title": "商务用车",
     "services.executive.desc": "为商务会议和代表团提供一尘不染的高端商务车。",
 
-    "fleet.tagline": "我们的车队",
+    "fleet.tagline": "我们的车辆",
     "fleet.title1": "7座高端",
     "fleet.title2": "黑色商务车",
     "fleet.desc": "乘坐我们精心维护的高端商务车，在格鲁吉亚最美丽的路线上享受舒适旅行。",
@@ -170,7 +170,7 @@ export const translations: Record<Language, Record<string, string>> = {
   },
   es: {
     "nav.services": "Servicios",
-    "nav.fleet": "Flota",
+    "nav.fleet": "Coches",
     "nav.reviews": "Reseñas",
     "nav.bookNow": "Reservar Ahora",
     "hero.tagline": "Transporte Premium en Georgia",
@@ -186,7 +186,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "services.airport.desc": "Recogidas y traslados puntuales y sin estrés desde los aeropuertos de Tiflis, Kutaisi o Batumi.",
     "services.executive.title": "Transporte Ejecutivo",
     "services.executive.desc": "Minivans impecables y de alta gama para reuniones de negocios, delegaciones o máxima privacidad.",
-    "fleet.tagline": "Nuestra Flota",
+    "fleet.tagline": "Nuestros Vehículos",
     "fleet.title1": "Premium de 7 Plazas",
     "fleet.title2": "Minivan Negra",
     "fleet.desc": "Viaja con estilo con nuestra minivan premium meticulosamente mantenida, diseñada para la comodidad en las rutas más pintorescas de Georgia.",
@@ -203,7 +203,7 @@ export const translations: Record<Language, Record<string, string>> = {
   },
   it: {
     "nav.services": "Servizi",
-    "nav.fleet": "Flotta",
+    "nav.fleet": "Auto",
     "nav.reviews": "Recensioni",
     "nav.bookNow": "Prenota Ora",
     "hero.tagline": "Trasporti Premium in Georgia",
@@ -219,7 +219,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "services.airport.desc": "Prelievi e rientri puntuali e senza stress dagli aeroporti di Tbilisi, Kutaisi o Batumi.",
     "services.executive.title": "Trasporto Esecutivo",
     "services.executive.desc": "Minivan impeccabili e di fascia alta per riunioni di lavoro, delegazioni o massima privacy.",
-    "fleet.tagline": "La Nostra Flotta",
+    "fleet.tagline": "I Nostri Veicoli",
     "fleet.title1": "Premium a 7 Posti",
     "fleet.title2": "Minivan Nera",
     "fleet.desc": "Viaggia con stile con il nostro minivan premium mantenuto meticolosamente, progettato per il comfort sui percorsi più panoramici della Georgia.",
