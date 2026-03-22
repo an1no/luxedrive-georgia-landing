@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10">
           <div>
-            <h3 className="font-display text-xl font-bold text-foreground mb-3">
-              <span className="text-primary">Midi</span> Travel Georgia
-            </h3>
+            <a href="#" className="inline-block mb-3">
+              <img src="/luxedrive-georgia-landing/logo.svg" alt="Midi Travel Georgia" className="h-[60px] w-[193px] object-contain" />
+            </a>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               {t("footer.desc")}
             </p>
