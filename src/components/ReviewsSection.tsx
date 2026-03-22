@@ -15,7 +15,7 @@ const reviews = [
   {
     name: "Marco R.",
     location: "Germany",
-    text: "Used LuxeDrive for an airport transfer and a 3-day tour. Exceptional quality both times. Highly recommend for anyone visiting Georgia.",
+    text: "Used Midi Travel for an airport transfer and a 3-day tour. Exceptional quality both times. Highly recommend for anyone visiting Georgia.",
   },
 ];
 

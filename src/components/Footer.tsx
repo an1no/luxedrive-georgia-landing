@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10">
           <div>
             <h3 className="font-display text-xl font-bold text-foreground mb-3">
-              <span className="text-primary">Luxe</span>Drive Georgia
+              <span className="text-primary">Midi</span> Travel Georgia
             </h3>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               {t("footer.desc")}
@@ -22,9 +22,9 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:luxedrivegeorgia@gmail.com" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors">
+                <a href="mailto:miditravelgeorgia@gmail.com" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors">
                   <Mail size={14} />
-                  luxedrivegeorgia@gmail.com
+                  miditravelgeorgia@gmail.com
                 </a>
               </li>
               <li>
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         <div className="mt-12 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground text-xs font-body">
-            © {new Date().getFullYear()} LuxeDrive Georgia. {t("footer.rights")}
+            © {new Date().getFullYear()} Midi Travel Georgia. {t("footer.rights")}
           </p>
         </div>
       </div>

@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
+# Midi Travel Georgia — Landing Page
 
-## Project info
+Premium Private Tours & VIP Transfers in Georgia.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Project Overview
 
-## How can I edit this code?
+This repository contains the source code for the Midi Travel Georgia landing page, featuring a modern design, multi-language support (English, Georgian, Russian, Chinese, Spanish, and Italian), and a responsive layout.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+Built with the following modern web technologies:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **React** (with TypeScript)
+- **Vite** (Build tool)
+- **Tailwind CSS** (Styling)
+- **shadcn/ui** (UI Components)
+- **Lucide React** (Icons)
+- **i18next** (custom implementation for multi-language support)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started Locally
 
-**Use your preferred IDE**
+To run the project on your local machine, ensure you have **Node.js** and **npm** installed.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Clone the repository:**
+   ```sh
+   git clone <YOUR_GIT_URL>
+   cd luxedrive-georgia-landing
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-Follow these steps:
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4. **Open your browser:**
+   The application will be available at [http://localhost:8080/luxedrive-georgia-landing/](http://localhost:8080/luxedrive-georgia-landing/)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Deployment
 
-# Step 3: Install the necessary dependencies.
-npm i
+The project is configured with **GitHub Actions** for automatic deployment to GitHub Pages.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Trigger**: Every push to the `main` branch.
+- **Workflow**: The `.github/workflows/deploy.yml` file handles building the Vite app and uploading it to the `gh-pages` environment.
 
-**Edit a file directly in GitHub**
+## Customization
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Adding/Modifying Content
+Key content can be found in:
+- `src/i18n/translations.ts`: All UI text and translations.
+- `src/components/`: Modular UI components for the Hero section, Fleet, Services, etc.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2026 Midi Travel Georgia. All rights reserved.

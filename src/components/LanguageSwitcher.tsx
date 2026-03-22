@@ -8,6 +8,8 @@ const flags: Record<Language, string> = {
   ka: "🇬🇪",
   ru: "🇷🇺",
   zh: "🇨🇳",
+  es: "🇪🇸",
+  it: "🇮🇹",
 };
 
 const LanguageSwitcher = () => {
