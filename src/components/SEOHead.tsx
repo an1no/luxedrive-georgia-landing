@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { seoData, loadCustomTopics } from "@/seo/seoData";
+import { seoData } from "@/seo/seoData";
 import { Language } from "@/i18n/translations";
 
 const BASE_URL = "https://an1no.github.io/luxedrive-georgia-landing";
@@ -73,13 +73,8 @@ const structuredData = {
 export function SEOHead() {
   const { language } = useLanguage();
   const data = seoData[language];
-  const customTopics = loadCustomTopics();
-  const allTopics = [...data.topics, ...(customTopics[language] || [])];
 
-  const allKeywords = [
-    ...data.keywords,
-    ...allTopics.flatMap((t) => t.keywords),
-  ].join(", ");
+  const allKeywords = data.keywords.join(", ");
 
   const canonicalUrl = `${BASE_URL}/`;
 

@@ -5,7 +5,6 @@ import FleetSection from "@/components/FleetSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import Footer from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
-import { SEOTopicSkill } from "@/components/SEOTopicSkill";
 
 const Index = () => {
   return (
@@ -17,7 +16,6 @@ const Index = () => {
       <FleetSection />
       <ReviewsSection />
       <Footer />
-      <SEOTopicSkill />
     </div>
   );
 };
