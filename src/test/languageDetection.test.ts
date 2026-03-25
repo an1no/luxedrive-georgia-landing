@@ -30,8 +30,8 @@ describe("countryToLanguage", () => {
     expect(countryToLanguage["IT"]).toBe("it");
   });
 
-  it("maps Georgia to Georgian", () => {
-    expect(countryToLanguage["GE"]).toBe("ka");
+  it("does not auto-map Georgia to Georgian (Georgian is only available via explicit user choice)", () => {
+    expect(countryToLanguage["GE"]).toBeUndefined();
   });
 
   it("does not have a mapping for unknown countries", () => {

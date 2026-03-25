@@ -1,8 +1,8 @@
 import type { Language } from "./translations";
 
 // Map ISO 3166-1 alpha-2 country codes to supported languages.
-// Georgian (ka) is intentionally only mapped via country code GE — it is never
-// auto-selected through browser-locale detection.
+// Georgian (ka) is intentionally omitted — it is never auto-selected and is
+// only available via explicit user choice.
 export const countryToLanguage: Partial<Record<string, Language>> = {
   // Chinese-speaking regions
   CN: "zh", TW: "zh", HK: "zh", MO: "zh",
@@ -15,8 +15,6 @@ export const countryToLanguage: Partial<Record<string, Language>> = {
   HN: "es", SV: "es", NI: "es", CR: "es", PA: "es", GQ: "es",
   // Italian-speaking regions
   IT: "it", SM: "it", VA: "it",
-  // Georgian
-  GE: "ka",
 };
 
 // Detect language from browser settings as a fallback.
