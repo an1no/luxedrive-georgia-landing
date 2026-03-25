@@ -1,7 +1,9 @@
 import type { Language } from "./translations";
 
-// Map ISO 3166-1 alpha-2 country codes to supported languages
-export const countryToLanguage: Record<string, Language> = {
+// Map ISO 3166-1 alpha-2 country codes to supported languages.
+// Georgian (ka) is intentionally only mapped via country code GE — it is never
+// auto-selected through browser-locale detection.
+export const countryToLanguage: Partial<Record<string, Language>> = {
   // Chinese-speaking regions
   CN: "zh", TW: "zh", HK: "zh", MO: "zh",
   // Russian-speaking regions
@@ -17,15 +19,16 @@ export const countryToLanguage: Record<string, Language> = {
   GE: "ka",
 };
 
-// Detect language from browser settings as a fallback
+// Detect language from browser settings as a fallback.
+// Georgian is deliberately excluded — it must never be auto-selected; only
+// available via IP detection (country GE) or explicit user choice.
 export const detectLanguageFromBrowser = (): Language => {
   const browserLang = navigator.language.split("-")[0].toLowerCase();
-  const supported: Record<string, Language> = {
+  const supported: Partial<Record<string, Language>> = {
     zh: "zh",
     ru: "ru",
     es: "es",
     it: "it",
-    ka: "ka",
     en: "en",
   };
   return supported[browserLang] ?? "en";

@@ -85,9 +85,9 @@ describe("detectLanguageFromBrowser", () => {
     expect(detectLanguageFromBrowser()).toBe("it");
   });
 
-  it("returns Georgian for 'ka' browser locale", () => {
+  it("defaults to English for 'ka' browser locale (Georgian not auto-selected)", () => {
     Object.defineProperty(navigator, "language", { value: "ka-GE", configurable: true });
-    expect(detectLanguageFromBrowser()).toBe("ka");
+    expect(detectLanguageFromBrowser()).toBe("en");
   });
 
   it("defaults to English for unsupported browser locale", () => {
