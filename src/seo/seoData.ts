@@ -1,13 +1,5 @@
 import { Language } from "@/i18n/translations";
 
-export interface SEOTopicEntry {
-  id: string;
-  title: string;
-  description: string;
-  keywords: string[];
-  createdAt: string;
-}
-
 export interface LanguageSEOData {
   title: string;
   description: string;
@@ -17,7 +9,6 @@ export interface LanguageSEOData {
   twitterTitle: string;
   twitterDescription: string;
   locale: string;
-  topics: SEOTopicEntry[];
 }
 
 export const seoData: Record<Language, LanguageSEOData> = {
@@ -48,7 +39,6 @@ export const seoData: Record<Language, LanguageSEOData> = {
     twitterDescription:
       "Explore Georgia in luxury. Private tours, VIP airport transfers, and executive transport with professional drivers.",
     locale: "en_US",
-    topics: [],
   },
   ka: {
     title: "Midi Travel Georgia — პრემიუმ კერძო ტურები და VIP ტრანსფერები",
@@ -75,7 +65,6 @@ export const seoData: Record<Language, LanguageSEOData> = {
     twitterDescription:
       "ჩამოაყალიბეთ თქვენი მოგზაურობა საქართველოში. კერძო ტურები, VIP ტრანსფერები, ბიზნეს ტრანსპორტი.",
     locale: "ka_GE",
-    topics: [],
   },
   ru: {
     title: "Midi Travel Georgia — Премиум Частные Туры и VIP Трансферы",
@@ -104,7 +93,6 @@ export const seoData: Record<Language, LanguageSEOData> = {
     twitterDescription:
       "Откройте Грузию в роскоши. Частные туры, VIP трансферы и бизнес-транспорт с профессиональными водителями.",
     locale: "ru_RU",
-    topics: [],
   },
   zh: {
     title: "Midi Travel Georgia — 格鲁吉亚高端私人旅游与VIP接送服务",
@@ -131,7 +119,6 @@ export const seoData: Record<Language, LanguageSEOData> = {
     twitterTitle: "Midi Travel Georgia — 高端旅游与VIP接送",
     twitterDescription: "在格鲁吉亚享受奢华旅行。私人旅游、VIP接送和商务用车服务。",
     locale: "zh_CN",
-    topics: [],
   },
   es: {
     title:
@@ -162,7 +149,6 @@ export const seoData: Record<Language, LanguageSEOData> = {
     twitterDescription:
       "Explora Georgia con estilo. Tours privados, traslados VIP y transporte ejecutivo con conductores profesionales.",
     locale: "es_ES",
-    topics: [],
   },
   it: {
     title:
@@ -193,30 +179,6 @@ export const seoData: Record<Language, LanguageSEOData> = {
     twitterDescription:
       "Esplora la Georgia in lusso. Tour privati, trasferimenti VIP e trasporto esecutivo con autisti professionisti.",
     locale: "it_IT",
-    topics: [],
   },
 };
 
-export const SEO_STORAGE_KEY = "midi_travel_seo_topics";
-
-export function loadCustomTopics(): Record<Language, SEOTopicEntry[]> {
-  try {
-    const stored = localStorage.getItem(SEO_STORAGE_KEY);
-    if (stored) {
-      return JSON.parse(stored);
-    }
-  } catch {
-    // ignore parse errors
-  }
-  return { en: [], ka: [], ru: [], zh: [], es: [], it: [] };
-}
-
-export function saveCustomTopics(
-  topics: Record<Language, SEOTopicEntry[]>
-): void {
-  try {
-    localStorage.setItem(SEO_STORAGE_KEY, JSON.stringify(topics));
-  } catch {
-    // ignore storage errors
-  }
-}
