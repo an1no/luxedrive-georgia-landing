@@ -24,8 +24,10 @@ const HeroSection = () => {
         <p className="text-muted-foreground text-lg md:text-xl font-body mb-10 max-w-xl mx-auto">
           {t("hero.subtitle")}
         </p>
-        <Button variant="gold" size="lg" className="text-base px-10 py-6">
-          {t("hero.cta")}
+        <Button variant="gold" size="lg" className="text-base px-10 py-6" asChild>
+          <a href="https://wa.me/995511134449" target="_blank" rel="noopener noreferrer">
+            {t("hero.cta")}
+          </a>
         </Button>
       </div>
     </section>

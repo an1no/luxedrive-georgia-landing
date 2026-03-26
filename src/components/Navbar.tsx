@@ -33,8 +33,10 @@ const Navbar = () => {
             </a>
           ))}
           <LanguageSwitcher />
-          <Button variant="gold" size="sm">
-            {t("nav.bookNow")}
+          <Button variant="gold" size="sm" asChild>
+            <a href="https://wa.me/995511134449" target="_blank" rel="noopener noreferrer">
+              {t("nav.bookNow")}
+            </a>
           </Button>
         </div>
 
@@ -63,8 +65,10 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button variant="gold" size="sm" className="w-full">
-            {t("nav.bookNow")}
+          <Button variant="gold" size="sm" className="w-full" asChild>
+            <a href="https://wa.me/995511134449" target="_blank" rel="noopener noreferrer">
+              {t("nav.bookNow")}
+            </a>
           </Button>
         </div>
       )}

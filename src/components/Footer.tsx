@@ -28,9 +28,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/995555000000" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors">
+                <a href="https://wa.me/995511134449" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors">
                   <Phone size={14} />
-                  WhatsApp
+                  +995 511 13 44 49
                 </a>
               </li>
             </ul>
@@ -40,11 +40,8 @@ const Footer = () => {
               {t("footer.follow")}
             </h4>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-200">
+              <a href="https://www.facebook.com/MidiTravelGeorgia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-200">
                 <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-200">
-                <Instagram size={18} />
               </a>
             </div>
           </div>
